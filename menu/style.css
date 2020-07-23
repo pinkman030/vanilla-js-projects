@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans',sans-serif;
+    background-color: aliceblue;
+    display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header h1{
+    margin: 15px 0;
+    margin-bottom: 5px;
+}
+
+hr{
+    width: 12%;
+    
+    margin: 0;
+    margin-bottom: 10px;
+    border: 1px solid saddlebrown;
+}
+.menu{
+    margin: 15px 0;
+}
+.btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid saddlebrown;
+    color: saddlebrown;
+    margin: 0 5px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 50px;
+    justify-content: space-between;
+}
+
+.menu-item{
+    display: flex;
+    margin: 10px;
+
+}
+
+.item-img{
+    
+  margin: 10px;
+}
+
+.item-img  >img{
+	width:250px;
+    border: 1px solid saddlebrown;
+    border-radius: 5px;
+    height:150px;
+    
+	object-fit: cover;
+}
+
+.item-info{
+    padding: 10px;
+    width: 300px;
+}
+
+
+.item-info  h4{
+margin:  0;
+font-size: 16px;
+padding: 5px;
+padding-bottom: 10px;
+border-bottom: 1px dotted #808080;
+display: flex;
+justify-content: space-between;
+}
+.item-info  .desc{
+    margin: 10px 0;
+    font-size: 14px;
+    color:#808080;   
+    }
+

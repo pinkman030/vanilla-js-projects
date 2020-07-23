@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Source+Sans+Pro:wght@400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+ 
+    background-color: aliceblue;
+}
+header{
+    margin: 30px 0;
+
+    color:#944b17;
+
+}
+header h1{
+ font-family: 'kaushan Script',sans-serif;
+ font-size: 40px;
+}
+.container{
+    width: 800px;
+    background-color:transparent;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.qa-card{
+    background-color:#fff;
+    padding:0 20px;
+    margin-bottom: 10px ;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 14px;
+width: 500px;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+
+.q-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.que{
+ font-size: 18px;
+font-weight: normal;
+font-family: 'Source Sans Pro',sans-serif; 
+}
+
+ .btn{
+    background-color: transparent;
+    border: none;
+}
+
+ .btn >i {
+    font-size: 20px;
+    color:#944b17;
+}
+
+.ans{
+    display: none;
+    font-size: 15px;
+    font-family: 'Source Sans Pro',sans-serif;
+    line-height: 1.6;
+    color:#5c5c5c;
+    border-top: 1px solid rgb(228, 223, 223);
+    padding-top: 10px ;
+    margin-top: 0;
+}
+
+.ans-active{
+    display: block;
+}
+
+@media (max-width:550px)
+{
+    .container{
+        width: 100%;
+    }
+    .qa-card{
+        width: 300px;
+    }
+}

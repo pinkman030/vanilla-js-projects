@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+/* 
+
+<i class="far fa-user"></i> name
+<i class="fas fa-user-lock"></i> password
+<i class="far fa-calendar-times"></i> age
+<i class="far fa-envelope-open"></i> email
+<i class="fas fa-phone"></i> call on
+<i class="far fa-map"></i> address
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    font-family: 'Source Sans Pro',sans-serif;
+    margin: 0;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+        background-image: linear-gradient(grey 50%,white 50%);
+    
+}
+
+.card{
+    width: 800px;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    
+}
+
+
+.img-box{
+    display: flex;
+        justify-content: center;
+    height: 100px;
+border-bottom: 1px solid rgb(209, 202, 202);
+background-color: rgb(241, 238, 238);
+
+
+}
+
+.img-box img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-top: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    /* background-color: green; */
+    align-items: center;
+
+
+}
+.content{
+    /* background-color: thistle; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+    align-items: center;
+    padding: 10px;
+}
+.content p{
+    margin: 0;
+    
+}
+
+.temp{
+    color:#808080;
+    letter-spacing: 1px;
+
+
+}
+.user-data{
+    font-size: 40px;
+    letter-spacing: 2px;
+
+}
+.card-body .links {
+    /* background-color: greenyellow; */
+    align-self: stretch;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    margin: 20px 0;
+}
+
+.card-body .links button{
+    background-color: transparent;
+    border: none;
+    padding:5px;
+}
+
+
+
+
+.card-body .links button i{
+
+    font-size: 40px;
+    color:#808080;
+    }
+
+
+    .card-body .links button i:hover{
+    color: slateblue;
+        
+    }
+
+  
+
+    #fetch-user{
+
+        padding: 5px 10px;
+        color:white;
+        background-color: slateblue;
+        border:1px solid white;
+        border-radius: 5px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-family: inherit;
+    }
+
+    #fetch-user:hover{
+        color: slateblue;
+        border: 1px solid slateblue;
+        background-color: transparent;
+        
+    }
+
+
+
+@media(max-width:800px)
+{
+    .card{
+        width: 550px;
+        margin: 0 20px;
+    }
+
+    .user-data{
+        font-size: 25px;
+    }
+
+    
+.card-body .links button i{
+
+    font-size: 25px;
+}
+}
+
