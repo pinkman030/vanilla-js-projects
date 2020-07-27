@@ -13,6 +13,7 @@ function init()
        
 menu.all.forEach((meal) => {
  
+    console.log(meal);
     mealTemplate = `
  
 <div class="menu-item">

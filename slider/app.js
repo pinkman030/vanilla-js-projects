@@ -1,7 +1,6 @@
 
 const next = document.querySelector("#next");
 const prev = document.querySelector("#prev");
-
 const img = document.querySelector(".img-box img");
 
 const allImgs = [
@@ -12,6 +11,10 @@ const allImgs = [
     "images/img-4.jpg",
     "images/img-5.jpg",
 ];
+
+
+
+
 
 
 let index=0; 
@@ -48,7 +51,7 @@ next.addEventListener("click",function(){
         }
         img.src = allImgs[index];
 
-        
+
         next.style.display= "inline-block";
 
     }
