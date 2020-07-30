@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+header h1{
+    margin-bottom: 0;
+}
+.container{
+    display: flex;
+  margin: 0 50px;
+height: 100%;
+    justify-content:center;
+}
+
+.img-box img{
+    width:550px;
+    height: 100%;
+
+ 
+    
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+
+
+    margin-left: 20px;
+    background-color: #fff;
+ 
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+
+}
+
+.details .links{
+    display: flex;
+}
+
+ .links .btn{
+flex: 1;
+border: none;
+padding: 10px;
+background-color: rgb(134, 134, 134);
+color:white;
+font-size: 14px;
+}
+.links .btn:hover{
+
+    background-color: rgb(32, 30, 30);
+
+}
+
+.para{
+    margin: 5px 0;
+    padding: 25px;
+    font-size: 14px;
+    overflow: hidden;
+
+}
+.para h3{
+    margin: 5px 0;
+}
+
+
+.para p{
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 10px 0;
+    
+    color:#6d6d6d;
+}
+
+/* onclick tabs/btn changes  */
+.links .active-btn{
+    background-color: transparent;
+    color: black;
+}
+
+.links .active-btn:hover{
+    color:white;
+}
+
+hr{
+    border-bottom: 2px solid #6d6d6d;
+    width: 35px;
+    margin: 5px 0;
+}
+
+@media (max-width:980px)
+{
+    .container{
+        flex-direction: column;
+        margin: 20px;
+    }
+    header p{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    header{
+        margin: 20px;
+    }
+  
+    .img-box img{
+        width: 100%;
+        height: 100%;
+    }
+    .details{
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+      
+    }
+
+}
+
+
+@media (max-width:500px){
+    header p{
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .para p{
+        font-size: 12px;
+    }
+
+}

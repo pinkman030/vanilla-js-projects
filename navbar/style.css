@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+ justify-items: center;
+ align-items: center;
+    background-color: aliceblue;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+
+header h1{
+    font-size: 20px;
+    font-family: 'Averia Sans Libre',sans-serif;
+    font-weight: bold;
+    color:slateblue;
+    text-shadow: 2px 2px 8px #96c1dd;
+}
+#bars{
+    display: none;
+}
+
+header h1 > i{
+    color:black;
+}
+a{
+
+    text-decoration: none;
+}
+
+.page-links a{
+    color:#909090;
+    padding-right: 14px;
+    font-size: 18px;
+    font-family: 'Averia Sans Libre',sans-serif;
+
+}
+.page-links a:hover{
+    color: slateblue;
+    border-bottom:2px solid  slateblue;
+    padding-bottom: 5px;
+    
+}
+
+.social-links a {
+    font-size: 18px;
+    padding-right: 8px;
+    color: slateblue;
+}
+
+
+
+
+@media (max-width:860px)
+{
+    nav{
+        grid-template-columns: 1fr;
+        grid-row-gap:5px;
+    }
+    header{
+        
+        display: flex;
+        justify-self: stretch;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 15px;
+    }
+    #bars{
+        display: block;
+        background-color: transparent;
+        border: none;
+       padding: 10px;
+        
+    }
+    #bars i{
+       color:slateblue;
+        font-size: 20px;
+    }
+
+    .page-links
+    {
+        display: none;
+        justify-self: stretch;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+      
+
+    }
+   
+    .page-links a{
+        margin: 10px 20px;
+        padding-right: 0;
+        padding-bottom:5px ;
+    }
+    .social-links{
+        display: none;
+        justify-self: stretch;
+        justify-content: center;
+        margin: 5px 0;
+
+    }
+    .social-links a{
+        
+        font-size: 20px;
+       padding-right: 15px ;
+    
+
+    }
+    
+    .active{
+        display: flex;
+
+    }
+
+}

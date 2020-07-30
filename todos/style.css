@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap');
+*{
+
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    font-family: 'PT Sans Caption',sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: aliceblue;
+}
+
+.container{
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px; 
+    height: auto;   
+    margin: 150px 0;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    align-items: stretch;
+}
+
+ul li{
+    width: 80%;
+    margin: 5px auto;
+    background-color: rgb(219, 245, 124);
+    padding: 8px 15px;
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+}
+
+.create-todo{
+    display: flex;
+    justify-content: center;
+}
+
+.create-todo input{
+    width: 60%;
+    padding: 5px 10px;
+    outline: none;
+border: 1px solid gray;
+    border-right: none;
+
+}
+.create-todo input:focus{
+    border:  1px solid black;
+    border-right: none;
+
+}
+
+.create-todo .btn{
+    width: 20%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid black;
+outline: none;
+font-family: inherit;
+font-weight: 700;    
+}
+
+
+.create-todo .btn:focus{
+    border:  1px solid black;
+}
+
+
+.delete-btn{
+    
+color: red;
+font-size: 14px;
+padding-left: 10px;
+}
+
+.edit-btn{
+    color:green;
+    font-size: 14px;
+}
+
+
+.clear-all {
+ 
+    display:flex;
+    justify-content: center;
+    background-color:transparent;
+    margin: 10px 0;
+    
+    
+}
+.clear-all .btn{
+    border: none;
+    color:red;
+    padding: 8px 15px;
+font-size: 14px;
+border-radius: 10px;
+font-family: inherit;
+background-color: transparent;
+
+outline: none;
+opacity: 0;
+}
+
+
+.clear-all .btn:hover{
+background-color: wheat;
+    
+    }
+    
+.clear-all .btn:focus{
+border: 1px solid red;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* notification */
+
+.notify{
+    background-color: rgb(203, 209, 120);
+    text-align: center;
+    opacity: 0;
+}
+
+.message {
+padding: 5px 0;
+margin: 0;
+color: white;
+font-weight: lighter;
+font-size: 12px;
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+
+ 
+.notify.success{
+    background-color: rgb(67, 207, 67);
+    opacity: 1;
+
+}
+
+.notify.failure{
+    background-color: tomato;
+    opacity: 1;
+
+}

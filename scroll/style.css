@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+margin: 0;
+font-family: 'Prompt';
+height: 100vh;
+width: 100%;
+}
+
+.container{
+    background-color: lightcoral;
+    background-image: url("https://images.hdqwalls.com/download/travel-hd-2560x1440.jpg");
+    height: 100%;
+    background-attachment: fixed;
+  background-position: center; 
+  background-repeat: no-repeat;
+background-size:cover;
+
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+display: flex;
+flex-direction: column;
+
+    background-color: rgba(2, 149, 175, 0.4);
+}
+header{
+    display: flex;
+ position: fixed;
+ width: 100%;
+ z-index: 99;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+}
+.logo h1{
+    font-size: 22px;
+    color:white;
+}
+.logo i{
+    font-size: 25px;
+    padding: 10px;
+    color:#105685;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 50px;
+
+}
+nav a{
+ text-decoration: none;
+ 
+ color: white;
+
+ font-size: 18px;
+ padding-right: 15px;
+ 
+}
+.abstract-info{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    margin:auto 0 ;
+    align-items: center;
+   color: white;
+   
+}
+.abstract-info h1{
+    margin: 0;
+    font-size: 50px;
+    
+}
+
+.abstract-info .btn{
+    padding: 5px 35px;
+    font-size:18px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.abstract-info .btn:hover{
+    background-color: white;
+    color:#25c3c2;
+    border: 1px solid #25c3c2;
+}
+
+.sub-h1{
+margin-top: 100px;
+margin-bottom: 0;
+
+}
+
+.aboutus{
+height: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: darkgoldenrod;
+}
+
+
+
+
+.services{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: coral;
+    }
+
+
+    .work{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 20px;
+    }
+
+.service{
+    border-radius: 5px;
+    background-color: #c9c9c9;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+.service h2{
+    color: white;
+    margin: 0;
+}
+.dash{
+    margin: 10px 0;
+    border: 1px solid tomato;
+    width: 15%;
+}
+
+.service .btn{
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    color:tomato;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 1px solid tomato;
+}
+
+.service .btn:hover{
+    background-color: tomato;
+    color: white;
+    border: 1px solid white;
+}
+    
+.contactus{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: slateblue;
+
+}
+
+::placeholder{
+    color: white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+
+}
+.form-control label{
+    display: inline-block;
+    width: 100%;
+    font-weight: 700;
+    margin-top: 10px;
+    color:white;
+}
+.form-control input,
+.form-control textarea{
+width: 100%;
+padding: 10px;
+margin-top: 5px;
+border-radius: 5px;
+background-color: transparent;
+color:white;
+border: 1px solid white;
+}
+
+input:focus,textarea:focus{
+    outline: none;
+    border: 2px solid white;
+}
+form .btn{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color:transparent;
+    color:white;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+form .btn:hover{
+    background-color: white;
+    color:cadetblue;
+    
+}
+.details{
+    display: flex;
+    
+    width: 100%;
+    justify-content: space-around;
+}
+
+.h1-dash{
+width: 30px;
+border: 1px solid white;
+margin:  0;
+
+margin-bottom: 20px;
+}
+
+
+    footer{
+        background-color: rgb(16, 23, 56);
+        display: flex;
+        width: 100%;
+        align-items: center;
+        height: 100px;
+        justify-content: center;
+        
+     
+      
+        color:white;
+    }
+
+    .scrolled{
+
+        background-color: white;
+ box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+
+       
+    }
+
+    .scrolled i{
+
+        color: #25c3c2;
+    }
+
+    .scrolled h1{
+
+        color: #25c3c2;
+    }
+    
+    .scrolled nav a{
+
+        color: #25c3c2;
+    }
