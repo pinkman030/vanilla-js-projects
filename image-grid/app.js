@@ -13,14 +13,8 @@ frame.addEventListener("click",function(){
     modal.classList.add("show-modal");
     pic.classList.add("clicked");
 
-
-
-
 console.log(frame.src);
 pic.src = frame.src;
-pic.style.transition = "opacity 1s ease-in";
-
-pic.style.opacity="1";
 
 
 

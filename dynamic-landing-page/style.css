@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;900&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    font-family: "Sans Sans Pro",sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-image: url("https://images.pexels.com/photos/955656/pexels-photo-955656.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    z-index: 99;
+
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+
+display: flex;
+flex-direction: column;
+
+align-items: center;
+
+}
+
+.myclock{
+    display: flex;
+    align-items: center;
+    /* background-color: lawngreen; */
+    margin-top: 100px;
+    flex-direction: column;
+}
+
+
+.myclock  .time{
+    letter-spacing: 3px;
+    font-size: 4.5em;
+    font-weight: bolder;
+    color:rgb(104, 101, 101);
+    text-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+}
+
+
+.session{
+    font-size:15px;
+
+    
+}
+
+.msg{
+
+    display:flex;
+    /* background-color: black; */
+    justify-content: center;
+    letter-spacing: 2px;
+        
+    color:rgb(104, 101, 101);
+    text-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    margin-bottom: 35px;
+
+}
+.name{
+    background: transparent;
+    width: 40%;
+border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 20px;
+    padding: 0 5px;
+    color:rgb(104, 101, 101);
+    letter-spacing: 2px;
+
+}
+
+
+.name::placeholder{
+    font-size: 20px;
+    font-family: inherit;
+    color:rgb(104, 101, 101);
+
+
+}
+
+.greet{
+    font-size: 22px;
+    text-align: center;
+        margin: 0;
+    
+}
+.quotes{
+    /* background-color: blue; */
+    color:white;
+    display: flex;
+    width: 70%;
+margin: 120px 20px;
+padding: 0;
+
+
+
+}
+
+.quotes blockquote{
+    font-size: 20px;
+    font-family: inherit;
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    text-align: center;
+
+    animation: fadein 2.5s ease-in ;
+
+}
+
+@keyframes fadein{
+from{
+opacity: 0;
+    }
+to{
+    opacity: 1;
+}
+}
+
+
+
+/* night  */
+.myclock .time.night{
+    color:white;
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+.msg.night-text{
+    color:white;
+}
+
+
+.name.night-text{
+    color:white;
+    
+}
+
+
+@media(max-width:375px)
+{
+    .container{
+        background-position:bottom;
+    }
+    .session{
+        padding-left: 10px;
+    }
+    .quotes{
+        width: 100%;
+        margin: 80px 20px;
+    }
+   .myclock .time{
+        font-size: 3.5em;
+    }
+    .msg{width: 100%;
+    /* background-color: violet; */
+margin: 15px 0;
+justify-content: center;   }
+
+    .name{
+        font-size: 16px;
+        width: 38%;
+        /* align-self: center; */
+        /* background-color:lime; */
+        /* text-align: center; */
+    }
+    .name::placeholder{
+        font-size: 16px;
+        
+    }
+
+    .greet{
+        font-size: 16px;
+    }
+}
