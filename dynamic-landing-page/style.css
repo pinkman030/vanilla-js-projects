@@ -157,6 +157,7 @@ to{
     .quotes{
         width: 100%;
         margin: 80px 20px;
+        margin-bottom: 0;
     }
    .myclock .time{
         font-size: 3.5em;
