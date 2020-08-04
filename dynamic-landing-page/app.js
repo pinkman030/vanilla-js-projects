@@ -28,25 +28,25 @@ function showTime(){
         msg = "Good Afternoon, ";
           
 
-    greet.classList.remove("night-text");
-    nameinput.classList.remove("night-text");
+    // greet.classList.remove("night-text");
+    // nameinput.classList.remove("night-text");
     }
     else if((h  === 5 || h< 12) && session ==="AM" ){
     msg="Good Morning, ";
   
 
-    greet.classList.remove("night-text");
-    nameinput.classList.remove("night-text");
+    // greet.classList.remove("night-text");
+    // nameinput.classList.remove("night-text");
     
-    document.querySelector(".container").style.backgroundImage= "url(\'https://images.pexels.com/photos/955656/pexels-photo-955656.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\')"   
+    // document.querySelector(".container").style.backgroundImage= "url(\'https://images.pexels.com/photos/955656/pexels-photo-955656.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\')"   
 
     }
     else if((h  === 6 || h < 9) && session ==="PM"){
         msg="Good Evening, ";
   
 
-        greet.classList.remove("night-text");
-        nameinput.classList.remove("night-text");
+        // greet.classList.remove("night-text");
+        // nameinput.classList.remove("night-text");
     }
     else{
     msg="Good Night, ";
@@ -59,13 +59,14 @@ function showTime(){
 
     
 
-    greet.classList.add("night-text");
-    nameinput.classList.add("night-text");
+    // greet.classList.add("night-text");
+    // nameinput.classList.add("night-text");
 
-currTime.classList.add("night");
+// currTime.classList.add("night");
 
 
-     document.querySelector(".container").style.backgroundImage= "url(\'https://images.unsplash.com/photo-1528353518104-dbd48bee7bc4?ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80\')"   
+//      document.querySelector(".container").style.backgroundImage= "url(\'https://images.unsplash.com/photo-1528353518104-dbd48bee7bc4?ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80\')"   
+// |
     }
 
     let time = h + ":" + m;
@@ -111,7 +112,7 @@ ${quotes[randomindex]}
 </blockquote>`;
 
 
-setTimeout(showQuotes,10000);
+setTimeout(showQuotes,20000);
 
 }
 
