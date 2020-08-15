@@ -69,15 +69,18 @@ margin: 0;
     color:white;
     opacity:0;
     z-index:99;
-    animation: fadein 0.7s ease-in;
+    animation: fadein 0.6s ease-in-out;
+    animation-fill-mode: forwards;
     
 }
 
 @keyframes fadein{
     from{
         opacity: 0;
+        display:none;
     }
     to{
+        display: flex;
         opacity: 1;
     }
 }
@@ -86,8 +89,6 @@ margin: 0;
     display: flex;
     opacity: 1;
 }
-
-
 
 
 #close{
